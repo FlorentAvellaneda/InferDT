@@ -62,8 +62,8 @@ Print a help message:
 We ran experiments on Ubuntu with Intel Core CPU i7-2600K @ 3.40 GHz.
 
 ### Verwer and Zhang Datasets
-
-(https://github.com/SiccoVerwer/binoct)
+The datasets we used are extracted from the paper of Verwer and Zhang and are available at
+(https://github.com/SiccoVerwer/binoct).
 
 | Dataset       |  S   |  B   | Time  DT_depth | Accuracy DT_depth |  k   | n for DT_size | Time  DT_size | Accuracy  DT_size | Accuracy BinOCT* |
 | ------------- | :--: | :--: | :------------: | :---------------: | :--: | :-----------: | :-----------: | :---------------: | ---------------- |
