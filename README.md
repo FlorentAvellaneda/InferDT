@@ -113,6 +113,7 @@ In this section we perform **x** 10-cross-validations made randomly and record t
 | [zoo](http://archive.ics.uci.edu/ml/datasets/Zoo)            | 101  | 136  |     47 ms      |      91.7 %       |  4   |      20       |    200 ms     |       91 %        | 200  |
 | [BodyMassIndex](https://www.kaggle.com/yersever/500-person-gender-height-weight-bodymassindex) | 500  | 172  |     53 sec     |       85 %        | 6.6  | 109              |  6.4 h             |  85.4 %                 | 1    |
 | [lungCancerDataset](https://www.kaggle.com/yusufdede/lung-cancer-dataset) |  59  |  72  |     3.8 ms     |      89.6 %       | 2.6  |       7       |    7.5 ms     |      90.6 %       | 200  |
+| [iris](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/iris.csv) |  113  |  114  |     30 ms     |      93.6 %       | 3.6  |       14       |    120 ms     |      93.9 %       | 200  |
 
 **S**: Number of examples in the dataset
 
