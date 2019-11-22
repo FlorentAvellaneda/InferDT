@@ -92,9 +92,9 @@ The datasets we used are extracted from the paper of Verwer and Zhang and are av
 
 **Accuracy BinOCT**: Accuracy of algorithm from https://github.com/SiccoVerwer/binoct
 
-### Bessiere, Hebrard, and O'Sullivan Datasets
+### Mouse
 
-We used dataset Mouse that the authors Bessiere, Hebrard and O'Sullivan shared with us. Each entry in rows DT\_size and DT\_depth corresponds to the average over 100 runs. The first columns correspond to the name of each algorithm used. The next three columns correspond to inferring a decision tree from the whole dataset. The last column corresponds the 10-fold cross-validations.
+We used dataset [Mouse](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/mouse.csv) that the authors Bessiere, Hebrard and O'Sullivan shared with us. Each entry in rows DT\_size and DT\_depth corresponds to the average over 100 runs. The first columns correspond to the name of each algorithm used. The next three columns correspond to inferring a decision tree from the whole dataset. The last column corresponds the 10-fold cross-validations.
 
 | Algorithm                                                    |   Time   |  k   |  n   | Accuracy |
 | ------------------------------------------------------------ | :------: | :--: | :--: | :------: |
