@@ -101,7 +101,7 @@ We used dataset [Mouse](https://raw.githubusercontent.com/FlorentAvellaneda/Infe
 | DT2 from paper [Minimising Decision Tree Size as Combinatorial Optimisation](http://homepages.laas.fr/ehebrard/papers/cp2009b.pdf) | 577 sec  |  4   |  15  |  83.8 %  |
 | DT1 from paper [Learning Optimal Decision Trees with SAT](https://www.ijcai.org/proceedings/2018/0189.pdf) | 12.9 sec |  4   |  15  |  83.8 %  |
 | DT_size: our algorithm without parameter "-d"                |  70 ms   |  4   |  15  |  83.5 %  |
-| DT_depth: our algorithm without parameter "-d"               |  20 ms   |  4   |  31  |  85.8 %  |
+| DT_depth: our algorithm with parameter "-d"               |  20 ms   |  4   |  31  |  85.8 %  |
 
 ### Other
 
