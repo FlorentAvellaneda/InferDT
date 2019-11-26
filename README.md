@@ -118,6 +118,7 @@ In this section we perform **x** 10-cross-validations made randomly and record t
 | [monks2](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/monks2.csv) |  169  |  17  |     330 ms     |      88.0 %       | 6  |       64       |    9.3 sec     |      88.7 %       | 100  |
 | [monks3](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/monks3.csv) |  92  |  17  |     125 ms     |      79.6 %       | 5.8  |       35.5       |    2.5 sec     |      81.5 %       | 800  |
 | [balance-scale](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/balance-scale.csv) |  625  |  20  |      200 sec     |      71.8 %       | 9  |       276       |    11 h     |      73.6 %       | 1  |
+| [wine](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/wine.csv) |  178  | 1276  |      4.5 sec     |      91.5 %       | 3  |              |     sec     |       %       | 200  |
 
 **S**: Number of examples in the dataset
 
