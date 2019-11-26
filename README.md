@@ -114,8 +114,9 @@ In this section we perform **x** 10-cross-validations made randomly and record t
 | [BodyMassIndex](https://www.kaggle.com/yersever/500-person-gender-height-weight-bodymassindex) | 500  | 172  |     53 sec     |       85 %        | 6.6  | 109              |  6.4 h             |  85.4 %                 | 1    |
 | [lungCancerDataset](https://www.kaggle.com/yusufdede/lung-cancer-dataset) |  59  |  72  |     3.8 ms     |      89.6 %       | 2.6  |       7       |    7.5 ms     |      90.6 %       | 200  |
 | [iris](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/iris.csv) |  113  |  114  |     30 ms     |      93.6 %       | 3.6  |       14       |    120 ms     |      94.0 %       | 200  |
-| [monks1](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/monks1.csv) |  124  |  14  |     30 ms     |      97.0 %       | 4.9  |       15       |    140 ms     |      99.5 %       | 200  |
-| [monks2](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/monks2.csv) |  169  |  14  |     330 ms     |      88.0 %       | 6  |       64       |    9.3 sec     |      88.7 %       | 100  |
+| [monks1](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/monks1.csv) |  124  |  17  |     30 ms     |      97.0 %       | 4.9  |       15       |    140 ms     |      99.5 %       | 200  |
+| [monks2](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/monks2.csv) |  169  |  17  |     330 ms     |      88.0 %       | 6  |       64       |    9.3 sec     |      88.7 %       | 100  |
+| [monks3](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/monks3.csv) |  92  |  17  |     125 ms     |      79.6 %       | 5.8  |       35.5       |    2.5 sec     |      81.5 %       | 800  |
 | [balance-scale](https://raw.githubusercontent.com/FlorentAvellaneda/InferDT/master/data/balance-scale.csv) |  625  |  20  |      200 sec     |      71.8 %       | 9  |       276       |    11 h     |      73.6 %       | 1  |
 
 **S**: Number of examples in the dataset
