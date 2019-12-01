@@ -27,7 +27,7 @@ namespace {
 
 		prefix.push_back(elements[first]);
 		std::vector< std::vector<T> > result2 = combinaisonImpl( elements, nombre-1, first+1, prefix );
-	
+
 
 		result1.insert(result1.end(), result2.begin(), result2.end());
 
