@@ -1,4 +1,8 @@
+
+
 # Efficient Inference of Optimal Decision Trees
+
+Paper link: http://florent.avellaneda.free.fr/dl/AAAI20.pdf
 
 The source code is designed to be compiled and executed on GNU/Linux.
 
