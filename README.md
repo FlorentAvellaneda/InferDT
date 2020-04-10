@@ -19,7 +19,7 @@ The source code is designed to be compiled and executed on GNU/Linux.
 The following instructions have been tested on Ubuntu 19.04
 
 ```bash
-sudo apt install g++ cmake minisat2 xdot
+sudo apt install g++ cmake minisat2 xdot libzip-dev libboost-dev
 ```
 
 ## Build
