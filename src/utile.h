@@ -9,6 +9,7 @@
 #include <tuple>
 #include <algorithm>
 #include <ostream>
+#include <optional>
 
 
 namespace {
@@ -184,5 +185,51 @@ std::vector<T> complSubVector(std::vector<T> v, C IDargs) {
 }
 
 
+// Afficher le continue d'un vector
+template <class T>
+std::ostream& operator<< (std::ostream &output, const std::vector<T> &v) {
+    unsigned int size=v.size();
+    output << "[";
+    for(unsigned int i=0; i<size; i++) {
+        output << v[i];
+        if( i+1 < size)
+            output << ", ";
+    }
+    output << "]";
+    return output;
+}
+
+
+namespace  {
+    void _toString(std::ostringstream &oss){
+    }
+
+    template<typename T1, typename ...T>
+    void _toString(std::ostringstream &oss, const T1& arg, const T&... args) {
+        oss << arg;
+        _toString(oss, args...);
+    }
+}
+
+
+template<typename ...T>
+std::string toString(const T&... args) {
+    std::ostringstream oss;
+    _toString(oss, args...);
+    return oss.str();
+}
+
+
+std::optional<double> toDouble(const std::string &value) {
+    char* end = nullptr;
+    double val = strtod(value.c_str(), &end);
+    if( (end == value.c_str()) || (*end != '\0') )
+        return {};
+    return val;
+}
+
+unsigned int pow2(unsigned int p) {
+    return 1 << p;
+}
 
 #endif

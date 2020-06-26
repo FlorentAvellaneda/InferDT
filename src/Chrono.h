@@ -13,8 +13,8 @@ namespace MaLib
     {
         public :
 
-            Chrono(std::string name)
-                : _name(name), _duree(0),_dureeSec(0), _pause(false)
+            Chrono(std::string name, bool afficherQuandDetruit=true)
+                : _name(name), _duree(0),_dureeSec(0), _pause(false), _afficherQuandDetruit(afficherQuandDetruit)
             {
                 gettimeofday(&depart, &tz);
             }
@@ -26,7 +26,9 @@ namespace MaLib
             }
 
             ~Chrono() {
-                print();
+                if(_name.size())
+                    if(_afficherQuandDetruit)
+                        print();
             }
 
             void setDuree(long sec, long microSec=0)
@@ -99,7 +101,7 @@ namespace MaLib
                 }
             }
 
-	    long tacSec()
+        long tacSec()
             {
                 if(_pause==false)
                 {
@@ -135,13 +137,12 @@ namespace MaLib
         long _dureeSec;
 
         bool _pause;
-
+        bool _afficherQuandDetruit;
     };
 }
 
 
 #endif /* end of include guard: CHRONO_R7U52KTM */
-
 
 
 

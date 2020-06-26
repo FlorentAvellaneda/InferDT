@@ -72,7 +72,11 @@ class CSV {
 				return false;
 			}
 
-			vLine = parseLine(line);
+            if(line.back() == 13) {
+                line.pop_back();
+            }
+
+            vLine = parseLine(line);
 
 			end = false;
 			return true;
@@ -225,20 +229,20 @@ class CSV {
 		}
 
 
-				template<class T>
-				std::vector< std::vector<T> > 
-				getAllSameType() {
-					std::vector< std::vector<T> > result;
+        template<class T>
+        std::vector< std::vector<T> >
+        getAllSameType() {
+            std::vector< std::vector<T> > result;
 
-					if(isEnd())
-						return result;
+            if(isEnd())
+                return result;
 
-					do {
-						result.push_back( getSameType<T>() );
-					} while( next() );
+            do {
+                result.push_back( getSameType<T>() );
+            } while( next() );
 
-					return result;
-				}
+            return result;
+        }
 
 		template<class T, class F>
 		std::vector < std::vector<T> > getUntil( F f, const std::vector<unsigned int> &pos ) {

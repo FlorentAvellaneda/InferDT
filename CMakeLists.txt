@@ -5,7 +5,6 @@ get_filename_component(projectName InferDT NAME)
 
 message("cmake for ${projectName}")
 
-
 file(
 	GLOB_RECURSE
 	source_files
@@ -17,11 +16,10 @@ set(externLibs
 )
 
 ############ OPTIONS DE COMPILATION ##########################
-add_definitions(-DNDEBUG)
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -Wall -O3 -static")
-#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -Wall -g")
+#add_definitions(-DNDEBUG)
+#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -Wall -O3 -static")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -Wall -g")
 ##############################################################
-
 
 
 if(TARGET ${projectName})
