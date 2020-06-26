@@ -7,7 +7,6 @@
 #include <cassert>
 #include <deque>
 
-
 #include "xdot.h"
 #include "Chrono.h"
 #include "CSV.h"
@@ -21,7 +20,6 @@
 
 using namespace MaLib;
 using namespace std;
-
 
 bool verify(std::vector<int> &tree, const vector<vector<vector<bool> > > &S) {
     for (unsigned int idClass = 0; idClass < S.size(); idClass++) {
@@ -47,7 +45,6 @@ bool verify(std::vector<int> &tree, const vector<vector<vector<bool> > > &S) {
 
     return true;
 }
-
 
 double score(const std::vector<int> &tree, const vector<vector<vector<bool> > > &S) {
     int ok = 0;
@@ -136,7 +133,7 @@ int main(int argc, char *argv[]) {
         } else {
             xdot::show( tree2dot(tree, binData) );
         }
-        assert(verify(tree, binData.getData()));  // Vérifier que l'arbre est consistant avec S
+        assert(verify(tree, binData.getData()));  // Vérifier que l'arbre est consistant avec binData
 
         exit(0);
     });
@@ -157,9 +154,10 @@ int main(int argc, char *argv[]) {
 
         TabularData data(trainingData);
         auto binData = data.getBinarizedTraining(useEquality);
+        if(addIDAsFeatures)
+            binData.addIDAsFeatures();
 
         for (int i = 0;; i++) {
-
             auto partitionOfBinData = binData.partition(nbfold, i);
 
             for (unsigned int sp = 0; sp < nbfold; sp++) {
@@ -199,16 +197,12 @@ int main(int argc, char *argv[]) {
             M_nbNodes.print();
             M_kFind.print();
             M_times.print("ms");
-
-
         }
 
         assert(false);
     });
 
     benchCmd->add_option("-f,--fold", nbfold, "Number of fold for the cross-validation (default = 10)");
-
-
 
     CLI11_PARSE(app, argc, argv);
 
