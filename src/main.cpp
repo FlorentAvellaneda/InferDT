@@ -120,9 +120,7 @@ int main(int argc, char *argv[]) {
         if(verbose) {
             std::cout << endl << endl << endl << "===== RESULT =====" << endl;
             std::cout << "Depth: " << log2(tree.size())-1 << std::endl;
-            std::cout << "tree = " << tree << std::endl;
-            if (!minimizeOnlyDepth)
-                std::cout << "Number of nodes: " << numberNodes(tree) << std::endl;
+            std::cout << "Number of nodes: " << numberNodes(tree) << std::endl;
         }
 
         if(testingData) {
@@ -190,8 +188,6 @@ int main(int argc, char *argv[]) {
                 assert(verify(tree, subBinData.getData()));
 
                 M_score.add(score(tree, T) * 100.0);
-
-                std::cout << "tree.size() = " << tree.size() << std::endl;
 
                 M_kFind.add(log2(tree.size())-1);
                 M_nbNodes.add(numberNodes(tree));

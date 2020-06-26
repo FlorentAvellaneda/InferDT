@@ -16,9 +16,9 @@ set(externLibs
 )
 
 ############ OPTIONS DE COMPILATION ##########################
-#add_definitions(-DNDEBUG)
-#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -Wall -O3 -static")
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -Wall -g")
+add_definitions(-DNDEBUG)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -Wall -O3 -static")
+#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -Wall -g")
 ##############################################################
 
 
